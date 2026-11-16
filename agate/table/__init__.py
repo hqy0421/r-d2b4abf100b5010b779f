@@ -311,6 +311,8 @@ from agate.table.find import find
 from agate.table.from_csv import from_csv
 from agate.table.from_fixed import from_fixed
 from agate.table.from_json import from_json
+from agate.table.from_nested_json import from_nested_json
+from agate.table.from_nested_object import from_nested_object
 from agate.table.from_object import from_object
 from agate.table.group_by import group_by
 from agate.table.homogenize import homogenize
@@ -344,6 +346,8 @@ Table.find = find
 Table.from_csv = from_csv
 Table.from_fixed = from_fixed
 Table.from_json = from_json
+Table.from_nested_json = from_nested_json
+Table.from_nested_object = from_nested_object
 Table.from_object = from_object
 Table.group_by = group_by
 Table.homogenize = homogenize

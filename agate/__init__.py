@@ -7,6 +7,7 @@ from agate.data_types import *
 from agate.exceptions import *
 # import agate.fixed as fixed
 from agate.mapped_sequence import MappedSequence
+from agate.nested import NestedTables, NestedValidationError, json_dumps
 from agate.rows import Row
 from agate.table import Table
 from agate.tableset import TableSet

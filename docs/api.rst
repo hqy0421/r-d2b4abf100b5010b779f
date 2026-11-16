@@ -6,6 +6,7 @@ API
     :maxdepth: 1
 
     api/table
+    api/nested
     api/tableset
     api/columns_and_rows
     api/data_types

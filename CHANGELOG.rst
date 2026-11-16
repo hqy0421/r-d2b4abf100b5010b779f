@@ -1,6 +1,7 @@
 1.14.3 - Unreleased
 -------------------
 
+- feat: added :meth:`.Table.from_nested_object`, :meth:`.Table.from_nested_json` and the :class:`.NestedTables` container to split a nested JSON-like object into parent/child native tables from an explicit schema and rebuild it from the current tables. Object fields stay normal columns, array elements become filterable/reorderable rows, missing/null/empty-container states stay distinct, and :class:`decimal.Decimal` values round-trip as exact JSON numbers. Inconsistent relationship keys, ordering or presence state raise :class:`.NestedValidationError` without modifying the tables.
 - feat: :class:`.Median`, :class:`.Percentiles`, :class:`.Quartiles`, :class:`.Quintiles`, :class:`.Deciles` and :class:`.IQR` can be applied to :class:`.TimeDelta` columns, like :class:`.Sum` and :class:`.Mean`.
 - fix: :meth:`.Table.distinct` now deduplicates rows when ``key`` is a sequence of column names.
 - fix: :class:`.Rank` ranks null values last when ``reverse=True``.
